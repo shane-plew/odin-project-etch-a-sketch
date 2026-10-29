@@ -29,12 +29,20 @@ body
     justify-content: center;
 }
 
+#content
+{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #main-container
 {
-    width: 90%;
-    height: 90%;
+    width: auto;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: white;
