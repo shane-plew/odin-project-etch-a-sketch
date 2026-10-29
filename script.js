@@ -6,7 +6,7 @@ function createGrid(x, y)
     const newGridSquare = document.createElement("div");
     let squareSide = mainContainer.offsetHeight / y; 
 
-    mainContainer.style.width = `${mainContainer.offsetWidth - (mainContainer.offsetWidth - mainContainer.offsetHeight)}px`;
+    mainContainer.style.width = `${squareSide * x}px`;
 
     newGridSquare.classList.add("grid-square");
     newGridSquare.style.width = `${squareSide}px`;
@@ -23,4 +23,4 @@ function createGrid(x, y)
 
 const mainContainer = document.querySelector("#main-container");
 
-createGrid(16, 16);
+createGrid(50, 100);
